@@ -35,5 +35,5 @@ public class SwitchCaseWithMap {
 			System.out.println("Please Enter a valid month to find out a valid season");
 		}
 	}
-
+	
 }

@@ -11,7 +11,7 @@ public class MultipleTabs {
 	public static String something; 
 	
 	public static void main(String[] args) {
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\daach\\git\\repository\\SampleProjectForReview\\SampleProject\\Driver\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", ".\\Driver\\msedgedriver.exe");
 		WebDriver driver = new EdgeDriver(); 
 		driver.navigate().to("https://github.com/");
 		driver.navigate().refresh(); 

@@ -26,13 +26,21 @@ public class SwitchCaseWithMap {
 		System.out.println("Enter a month to find out the season");
 		
 		Scanner scanner = new Scanner(System.in); 
-		String userInput = scanner.next().toLowerCase(Locale.ROOT);
+		String userStringInput = scanner.next().toLowerCase(Locale.ROOT);
 		
-		if(months.containsKey(userInput)) {
-			String finalOutput = months.get(userInput); 
+		if(months.containsKey(userStringInput)) {
+			String finalOutput = months.get(userStringInput); 
 			System.out.println(finalOutput);
 		}else {
 			System.out.println("Please Enter a valid month to find out a valid season");
+		}
+		System.out.println("Would you like to enter another month? Please enter Y/N.");
+		char userCharInput = scanner.next().toUpperCase(Locale.ROOT).charAt(0); 
+		
+		if(userCharInput == 'y' || userCharInput == 'Y') {
+			//head back to loop (while? or do-while? or something else?)
+		}else {
+			System.out.println("Thank you for using our program. See you soon.");
 		}
 	}
 
